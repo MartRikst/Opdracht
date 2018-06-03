@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.details">
+            <block class="Magento\Catalog\Block\Widget\RecentlyViewed"
+                   name="Previous"
+                   template="Magento_Catalog::product/widget/viewed/grid.phtml"
+                   group="detailed_info" >
+                <arguments>
+                    <argument translate="true" name="title" xsi:type="string">Previous</argument>
+                    <argument name="uiComponent" xsi:type="string">widget_recently_viewed</argument>
+                    <argument name="show_attributes" xsi:type="string">name,image,price</argument>
+                    <argument name="show_buttons" xsi:type="string">add_to_wishlist,add_to_compare,add_to_cart</argument>
+                    <argument name="page_size" xsi:type="number">4</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
