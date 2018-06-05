@@ -1,6 +1,6 @@
 <?php
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Riksten_PreviousCAP',
+    'Riksten_PreviousTabCAP',
     __DIR__
 );

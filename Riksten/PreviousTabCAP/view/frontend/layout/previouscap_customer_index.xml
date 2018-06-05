@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <head>
+        <title>Recently Viewed</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Reports\Block\Product\Widget\Viewed"
+                   name="recently_viewed"
+                   template="Riksten_PreviousTabCAP::widget/viewed/content/previous.phtml">
+                <arguments>
+                    <argument name="uiComponent" xsi:type="string">widget_recently_viewed</argument>
+                    <argument name="page_size" xsi:type="number">10</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
