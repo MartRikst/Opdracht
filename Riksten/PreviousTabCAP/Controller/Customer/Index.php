@@ -5,7 +5,7 @@ use Magento\Framework\App\Action\Action;
 
 /**
  * Class Index
- * @package Riksten\PreviousCAP\Controller\Customer
+ * @package Riksten\PreviousTabCAP\Controller\Customer
  */
 Class Index extends Action
 {
