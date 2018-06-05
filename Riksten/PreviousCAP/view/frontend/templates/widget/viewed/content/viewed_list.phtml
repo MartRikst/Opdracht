@@ -1,6 +1,4 @@
-<?php /** @var $block \Magento\Reports\Block\Product\Viewed */?>
 <?php if ($items = $block->getRecentlyViewedProducts()): ?>
-
     <div class="table-wrapper">
         <table class="table-recently-viewed">
             <thead>
@@ -16,12 +14,14 @@
              <tr>
                 <td class="product-name"><?= $item->getName()  ?></td>
                 <td class="product-price"><?= $block->getProductPrice($item) ?></td>
-                <td class="product -sku"><?= $item->getSKU() ?></td>
+                <td class="product-sku"><?= $item->getSKU() ?></td>
                 <td class="product-redirect-button"><a href="<?= $item->getProductUrl($item) ?>"><button>View Product</button></a></td>
             </tr>
             </tbody>
             <?php endforeach ?>
         </table>
     </div>
+<?php else:?>
+    <?= 'There are no recently viewed products yet' ?>
 <?php endif;?>
 
