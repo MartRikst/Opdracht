@@ -11,14 +11,14 @@
             </thead>
             <tbody>
             <?php foreach ($items as $item): ?>
-             <tr>
-                <td class="product-name"><?= $item->getName()  ?></td>
-                <td class="product-price"><?= $block->getProductPrice($item) ?></td>
-                <td class="product-sku"><?= $item->getSKU() ?></td>
-                <td class="product-redirect-button"><a href="<?= $item->getProductUrl($item) ?>"><button>View Product</button></a></td>
-            </tr>
-            </tbody>
-            <?php endforeach ?>
+                <tr>
+                    <td class="product-name"><?= $item->getName()  ?></td>
+                    <td class="product-price"><?= $block->getProductPrice($item) ?></td>
+                    <td class="product-sku"><?= $item->getSKU() ?></td>
+                    <td class="product-redirect-button"><a href="<?= $item->getProductUrl($item) ?>"><button>View Product</button></a></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>    
         </table>
     </div>
 <?php endif;?>
